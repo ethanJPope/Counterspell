@@ -22,7 +22,7 @@ AssetImportWorker1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-64676
+64764
 -job-worker-count
 3
 -background-job-worker-count
@@ -68,7 +68,7 @@ Successfully changed project path to: /Users/ethan/Documents/GitHub/Counterspell
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8547088448]  Target information:
 
-Player connection [8547088448]  * "[IP] 192.168.0.249 [Port] 0 [Flags] 2 [Guid] 231400875 [EditorId] 231400875 [Version] 1048832 [Id] OSXEditor(0,ERIKs-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8547088448]  * "[IP] 192.168.0.249 [Port] 0 [Flags] 2 [Guid] 2645421910 [EditorId] 2645421910 [Version] 1048832 [Id] OSXEditor(0,ERIKs-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8547088448] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8547088448] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -82,7 +82,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 1.92 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.94 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.28f1 (f336aca0cab5)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.0.28f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -97,45 +97,47 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.0.28f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.0.28f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.0.28f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56170
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56468
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.28f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.28f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.002980 seconds.
-- Loaded All Assemblies, in  0.276 seconds
+Register platform support module: /Applications/Unity/Hub/Editor/6000.0.28f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001056 seconds.
+- Loaded All Assemblies, in  0.254 seconds
+Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.348 seconds
-Domain Reload Profiling: 624ms
-	BeginReloadAssembly (92ms)
+- Finished resetting the current domain, in  0.350 seconds
+Domain Reload Profiling: 604ms
+	BeginReloadAssembly (61ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (26ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (27ms)
 	RebuildNativeTypeToScriptingClass (9ms)
 	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (118ms)
-		LoadAssemblies (92ms)
+	LoadAllAssembliesAndSetupDomain (126ms)
+		LoadAssemblies (62ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (116ms)
-			TypeCache.Refresh (115ms)
+		AnalyzeDomain (122ms)
+			TypeCache.Refresh (121ms)
 				TypeCache.ScanAssembly (105ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (348ms)
+	FinalizeReload (350ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (315ms)
+		SetupLoadedEditorAssemblies (317ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (29ms)
+			InitializePlatformSupportModulesInManaged (30ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (187ms)
-			ProcessInitializeOnLoadMethodAttributes (91ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (184ms)
+			ProcessInitializeOnLoadMethodAttributes (93ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -147,11 +149,12 @@ Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.842 seconds
+- Loaded All Assemblies, in  0.896 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
@@ -160,129 +163,122 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.749 seconds
-Domain Reload Profiling: 1592ms
-	BeginReloadAssembly (407ms)
+- Finished resetting the current domain, in  0.784 seconds
+Domain Reload Profiling: 1680ms
+	BeginReloadAssembly (460ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (26ms)
+		CreateAndSetChildDomain (54ms)
+	RebuildCommonClasses (28ms)
 	RebuildNativeTypeToScriptingClass (9ms)
 	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (378ms)
-		LoadAssemblies (262ms)
+	LoadAllAssembliesAndSetupDomain (377ms)
+		LoadAssemblies (257ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (156ms)
-			TypeCache.Refresh (121ms)
-				TypeCache.ScanAssembly (107ms)
-			BuildScriptInfoCaches (29ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (750ms)
+		AnalyzeDomain (159ms)
+			TypeCache.Refresh (123ms)
+				TypeCache.ScanAssembly (109ms)
+			BuildScriptInfoCaches (30ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (785ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (622ms)
+		SetupLoadedEditorAssemblies (655ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (2ms)
-			BeforeProcessingInitializeOnLoad (34ms)
-			ProcessInitializeOnLoadAttributes (558ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (565ms)
 			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
 Launching external process: /Applications/Unity/Hub/Editor/6000.0.28f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5077 unused Assets / (0.9 MB). Loaded Objects now: 5685.
-Memory consumption went from 124.0 MB to 123.1 MB.
-Total: 6.915083 ms (FindLiveObjects: 0.422250 ms CreateObjectMapping: 0.259083 ms MarkObjects: 5.310584 ms  DeleteObjects: 0.922625 ms)
+Unloading 5077 unused Assets / (275.6 KB). Loaded Objects now: 5685.
+Memory consumption went from 123.7 MB to 123.4 MB.
+Total: 8.040541 ms (FindLiveObjects: 0.476083 ms CreateObjectMapping: 0.304042 ms MarkObjects: 6.291375 ms  DeleteObjects: 0.968041 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 185258.397505 seconds.
+  Time since last request: 186142.760624 seconds.
   path: Assets/Level1SpriteSheet_3.prefab
   artifactKey: Guid(a6b89fe41f1c74a33916491e4b38f200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level1SpriteSheet_3.prefab using Guid(a6b89fe41f1c74a33916491e4b38f200) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97e9df49eb1c910acb43058f87c9a433') in 0.077070417 seconds
+Start importing Assets/Level1SpriteSheet_3.prefab using Guid(a6b89fe41f1c74a33916491e4b38f200) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bffd9c9dd3b98a29f799db63a89474d2') in 0.095944959 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Level3SpriteSheet.png
+  artifactKey: Guid(087cdbaedd874438b90c20e3577de486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level3SpriteSheet.png using Guid(087cdbaedd874438b90c20e3577de486) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c3c179840652b68ef96d96e32553f867') in 0.037122625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Level2SpriteSheet.png
+  artifactKey: Guid(3656b195083c04cb9bf558788918aba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level2SpriteSheet.png using Guid(3656b195083c04cb9bf558788918aba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5b928befdfff802a1abdf12f848553eb') in 0.027162833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
   path: Assets/FrogSpriteSheet.png
   artifactKey: Guid(8dea7266279b34efa93c4b3ab6536980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FrogSpriteSheet.png using Guid(8dea7266279b34efa93c4b3ab6536980) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd119867b62a2ac49cfdd1395ac1193d1') in 0.020989583 seconds
+Start importing Assets/FrogSpriteSheet.png using Guid(8dea7266279b34efa93c4b3ab6536980) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '45a2d21d3e566d100eb5746bf20152e6') in 0.009448334 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000163 seconds.
+  Time since last request: 0.000140 seconds.
+  path: Assets/ShadowFrogSpriteSheet.png
+  artifactKey: Guid(27f90a9e4b0a04cbab6ef7f3da10c04e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ShadowFrogSpriteSheet.png using Guid(27f90a9e4b0a04cbab6ef7f3da10c04e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '41e8fadcd39f3d203ed0a9fe9a72b5f2') in 0.023113417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/ElevatorSpriteSheet.png
+  artifactKey: Guid(1ce00d7648c914c0ea17df94d67d97d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ElevatorSpriteSheet.png using Guid(1ce00d7648c914c0ea17df94d67d97d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea9fbc32249f02b6341d1b9da4c686f0') in 0.019337 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
   path: Assets/Level1SpriteSheet.png
   artifactKey: Guid(c3b950ab1f37242749a3197aef5cca9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level1SpriteSheet.png using Guid(c3b950ab1f37242749a3197aef5cca9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec6c86754cb3e7bc2a398f6949ec9ea6') in 0.006084209 seconds
+Start importing Assets/Level1SpriteSheet.png using Guid(c3b950ab1f37242749a3197aef5cca9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cdd08d1a1175fe42438dc4feae104038') in 0.010219 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
 
 ========================================================================
 Received Prepare
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-Thread 0x310f2b000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.424 seconds
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.873 seconds
-Domain Reload Profiling: 1298ms
-	BeginReloadAssembly (125ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (52ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (13ms)
-	LoadAllAssembliesAndSetupDomain (252ms)
-		LoadAssemblies (178ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (112ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (99ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (873ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (727ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (41ms)
-			ProcessInitializeOnLoadAttributes (657ms)
-			ProcessInitializeOnLoadMethodAttributes (21ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (3ms)
-Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5075 unused Assets / (0.9 MB). Loaded Objects now: 5702.
-Memory consumption went from 136.4 MB to 135.5 MB.
-Total: 7.339625 ms (FindLiveObjects: 0.303833 ms CreateObjectMapping: 0.382583 ms MarkObjects: 5.643292 ms  DeleteObjects: 1.009667 ms)
+Unloading 1 unused Assets / (69.9 KB). Loaded Objects now: 5707.
+Memory consumption went from 116.9 MB to 116.8 MB.
+Total: 5.347458 ms (FindLiveObjects: 0.160917 ms CreateObjectMapping: 0.085500 ms MarkObjects: 5.078917 ms  DeleteObjects: 0.021875 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (69.9 KB). Loaded Objects now: 5707.
+Memory consumption went from 116.7 MB to 116.6 MB.
+Total: 5.859583 ms (FindLiveObjects: 0.190333 ms CreateObjectMapping: 0.118334 ms MarkObjects: 5.527333 ms  DeleteObjects: 0.023083 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
@@ -290,12 +286,13 @@ Received Prepare
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-Thread 0x317913000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.513 seconds
+Thread 0x17cd87000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.569 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.37 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
@@ -303,44 +300,1272 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.852 seconds
-Domain Reload Profiling: 1367ms
-	BeginReloadAssembly (161ms)
+- Finished resetting the current domain, in  0.666 seconds
+Domain Reload Profiling: 1238ms
+	BeginReloadAssembly (126ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (20ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (67ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (9ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (10ms)
 	initialDomainReloadingComplete (17ms)
-	LoadAllAssembliesAndSetupDomain (301ms)
-		LoadAssemblies (201ms)
+	LoadAllAssembliesAndSetupDomain (392ms)
+		LoadAssemblies (181ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (136ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (120ms)
+		AnalyzeDomain (246ms)
+			TypeCache.Refresh (173ms)
+				TypeCache.ScanAssembly (155ms)
+			BuildScriptInfoCaches (67ms)
 			ResolveRequiredComponents (5ms)
-	FinalizeReload (852ms)
+	FinalizeReload (667ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (693ms)
+		SetupLoadedEditorAssemblies (538ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (34ms)
+			ProcessInitializeOnLoadAttributes (475ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5075 unused Assets / (1.1 MB). Loaded Objects now: 5710.
+Memory consumption went from 135.8 MB to 134.7 MB.
+Total: 6.116250 ms (FindLiveObjects: 0.291792 ms CreateObjectMapping: 0.198666 ms MarkObjects: 4.855167 ms  DeleteObjects: 0.770458 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Thread 0x3120af000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.707 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.870 seconds
+Domain Reload Profiling: 1579ms
+	BeginReloadAssembly (207ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (30ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (87ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (448ms)
+		LoadAssemblies (254ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (236ms)
+			TypeCache.Refresh (165ms)
+				TypeCache.ScanAssembly (148ms)
+			BuildScriptInfoCaches (64ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (870ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (716ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (641ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5075 unused Assets / (1.1 MB). Loaded Objects now: 5712.
+Memory consumption went from 142.7 MB to 141.6 MB.
+Total: 7.055541 ms (FindLiveObjects: 0.286209 ms CreateObjectMapping: 0.312500 ms MarkObjects: 5.389541 ms  DeleteObjects: 1.066792 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Thread 0x17cd87000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.436 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 0.35 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.813 seconds
+Domain Reload Profiling: 1250ms
+	BeginReloadAssembly (123ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (266ms)
+		LoadAssemblies (185ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (111ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (99ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (813ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (670ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (600ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5075 unused Assets / (1.0 MB). Loaded Objects now: 5714.
+Memory consumption went from 149.5 MB to 148.5 MB.
+Total: 7.860125 ms (FindLiveObjects: 0.352209 ms CreateObjectMapping: 0.336334 ms MarkObjects: 5.853542 ms  DeleteObjects: 1.317583 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Thread 0x17b2d7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.528 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.877 seconds
+Domain Reload Profiling: 1408ms
+	BeginReloadAssembly (192ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (31ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (86ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (14ms)
+	LoadAllAssembliesAndSetupDomain (287ms)
+		LoadAssemblies (205ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (121ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (105ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (877ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (726ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (3ms)
 			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (612ms)
-			ProcessInitializeOnLoadMethodAttributes (25ms)
+			ProcessInitializeOnLoadAttributes (647ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5075 unused Assets / (413.6 KB). Loaded Objects now: 5716.
+Memory consumption went from 156.4 MB to 156.0 MB.
+Total: 7.677416 ms (FindLiveObjects: 0.343417 ms CreateObjectMapping: 0.351166 ms MarkObjects: 5.971625 ms  DeleteObjects: 1.010834 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Thread 0x17b2d7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.424 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.745 seconds
+Domain Reload Profiling: 1171ms
+	BeginReloadAssembly (113ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (265ms)
+		LoadAssemblies (181ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (114ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (100ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (745ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (606ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (537ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5075 unused Assets / (0.6 MB). Loaded Objects now: 5718.
+Memory consumption went from 163.1 MB to 162.5 MB.
+Total: 6.572583 ms (FindLiveObjects: 0.336083 ms CreateObjectMapping: 0.299625 ms MarkObjects: 5.009375 ms  DeleteObjects: 0.927167 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Thread 0x17b2d7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.412 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.893 seconds
+Domain Reload Profiling: 1306ms
+	BeginReloadAssembly (109ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (255ms)
+		LoadAssemblies (172ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (113ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (100ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (893ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (725ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (44ms)
+			ProcessInitializeOnLoadAttributes (650ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (3ms)
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5075 unused Assets / (0.7 MB). Loaded Objects now: 5704.
-Memory consumption went from 143.4 MB to 142.6 MB.
-Total: 7.200083 ms (FindLiveObjects: 0.302542 ms CreateObjectMapping: 0.359166 ms MarkObjects: 5.609417 ms  DeleteObjects: 0.928708 ms)
+Unloading 5075 unused Assets / (0.7 MB). Loaded Objects now: 5720.
+Memory consumption went from 170.0 MB to 169.4 MB.
+Total: 7.225625 ms (FindLiveObjects: 0.350292 ms CreateObjectMapping: 0.301833 ms MarkObjects: 5.491875 ms  DeleteObjects: 1.081166 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 2499.505248 seconds.
+  path: Assets/Scrpts/ShadowScript.cs
+  artifactKey: Guid(13c25af8405a4462199f92078dd30533) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scrpts/ShadowScript.cs using Guid(13c25af8405a4462199f92078dd30533) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '880e11ce17c1644d470498e42ba210a0') in 0.041510792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/bat/bat-fly
+  artifactKey: Guid(8b0ae1f3ef82f764996976802da6d604) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/bat/bat-fly using Guid(8b0ae1f3ef82f764996976802da6d604) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '99c897e4111acbbccb5da19674ac6479') in 0.0020485 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Level2/Level2SpriteSheet_10.asset
+  artifactKey: Guid(addedf5bbdaf845628422f18ad22fa66) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Level2/Level2SpriteSheet_10.asset using Guid(addedf5bbdaf845628422f18ad22fa66) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '24198e8ac055f73bd91ba368da56de37') in 0.018103792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Slimer
+  artifactKey: Guid(5b49a81341f495c4a9c0a4a54cb12c85) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Slimer using Guid(5b49a81341f495c4a9c0a4a54cb12c85) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'abfe362eafa2443806b314c32948a4a3') in 0.001378583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Level3/Level3SpriteSheet_0.asset
+  artifactKey: Guid(356490a4d9b01465eadb412769625a1e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Level3/Level3SpriteSheet_0.asset using Guid(356490a4d9b01465eadb412769625a1e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4c909041b6b31e2c66ed111d68a760c5') in 0.004715542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Level2
+  artifactKey: Guid(45a7bac87df254b8db0f3ae26e1efb11) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Level2 using Guid(45a7bac87df254b8db0f3ae26e1efb11) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c4295fd3906269c6ddb7208d4e7e9740') in 0.00120875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Level3/Level3.prefab
+  artifactKey: Guid(cd7117ba08c4b4f3fb5c968be59de65c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Level3/Level3.prefab using Guid(cd7117ba08c4b4f3fb5c968be59de65c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0d14183de6559bd14dad9b3f03d18f1b') in 0.010906833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Level3SpriteSheet.png
+  artifactKey: Guid(087cdbaedd874438b90c20e3577de486) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Level3SpriteSheet.png using Guid(087cdbaedd874438b90c20e3577de486) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8f8d957566ae9f506098af69c99da731') in 0.038045125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Dog
+  artifactKey: Guid(21625bb91d8be3149a80f7afdb6581ab) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Dog using Guid(21625bb91d8be3149a80f7afdb6581ab) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd86d410fc587128bdbfe3acaa3a6b250') in 0.00154225 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Level2/Level2SpriteSheet_8.asset
+  artifactKey: Guid(497383dde3da348a4b3e87baf98a7b36) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Level2/Level2SpriteSheet_8.asset using Guid(497383dde3da348a4b3e87baf98a7b36) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6c387e50d3ba4677487afbc2fe9be4e2') in 0.003324541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/opossum
+  artifactKey: Guid(b51573a0febe34fceadd0e7c64f17c94) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/opossum using Guid(b51573a0febe34fceadd0e7c64f17c94) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3e546f2f5697dfd29a55b498d6688c7a') in 0.001208792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Items
+  artifactKey: Guid(b43334bbe1d1849df80f90877d981b8b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Items using Guid(b43334bbe1d1849df80f90877d981b8b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5f9e733f8c40773951bba32c040c8ab1') in 0.001356 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Eagle Hurt
+  artifactKey: Guid(9289aed4be79c7f41bb22f2059773ed1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Eagle Hurt using Guid(9289aed4be79c7f41bb22f2059773ed1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '44c1a7ef2f3058873af750b135e7d8fb') in 0.001141625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Items/cherry
+  artifactKey: Guid(2b25fb0d2fb6b4c5f8439e2d629b7e73) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Items/cherry using Guid(2b25fb0d2fb6b4c5f8439e2d629b7e73) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '90e6e4e0aab768cb9a718b9cedc0ea8e') in 0.001053791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset
+  artifactKey: Guid(f2b645eff4161c948a381d150c0904d6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset using Guid(f2b645eff4161c948a381d150c0904d6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ca5c610bac2f2e7c20b4aea1c2926a6e') in 0.0009425 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '19d0cec12fbf87d7502d54262de3105d') in 0.006063875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Level2/Level2.prefab
+  artifactKey: Guid(8d54435a86c05424894367f77dfed29e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Level2/Level2.prefab using Guid(8d54435a86c05424894367f77dfed29e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '079ee5856590e0eb26fcbf34553a8e82') in 0.007624958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/player
+  artifactKey: Guid(c38f07c49aff74810b5ee46bc2a90197) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/player using Guid(c38f07c49aff74810b5ee46bc2a90197) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b9f817fd8d9f8198f796b37443a476e9') in 0.001164125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies
+  artifactKey: Guid(c7f1351336fe548caa5323a57a6c930a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies using Guid(c7f1351336fe548caa5323a57a6c930a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7ff9d527aef249bd80eceeed425fa72c') in 0.001218459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Elevator/ElevatorSpriteSheet_9.asset
+  artifactKey: Guid(69a271ba0ce964ef29df07738b11147f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Elevator/ElevatorSpriteSheet_9.asset using Guid(69a271ba0ce964ef29df07738b11147f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '925dfadb844067541d29e21c09f2630f') in 0.00294375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/frog/idle
+  artifactKey: Guid(a7e0d8dacdac94b808e416f4fe68d8ee) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/frog/idle using Guid(a7e0d8dacdac94b808e416f4fe68d8ee) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f7f6b1b5c0602b88d48a5912b0278290') in 0.001359916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Items/gem
+  artifactKey: Guid(17f597b0b8c304eab96c9cd958dd1ec9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Items/gem using Guid(17f597b0b8c304eab96c9cd958dd1ec9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4578de2e999521e3cc3dd2894f901e88') in 0.001057208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(2a90b547a804d403992ef56d34a42f92) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/Level1.unity using Guid(2a90b547a804d403992ef56d34a42f92) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '80049237da0065bf92d87a9af8ff7881') in 0.006849875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Elevator/Elevator.prefab
+  artifactKey: Guid(9b96c32e72b3f4db09c8b87ecc747d16) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Elevator/Elevator.prefab using Guid(9b96c32e72b3f4db09c8b87ecc747d16) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ab4f00263f866285d9647782deb4e404') in 0.008570375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Level3/Level3SpriteSheet_3.asset
+  artifactKey: Guid(ddd5238862d9b4e11ab35bd917c1b31a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Level3/Level3SpriteSheet_3.asset using Guid(ddd5238862d9b4e11ab35bd917c1b31a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5c957f4c8d78eecb65ab5b62f755f996') in 0.003174625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/TileAssets
+  artifactKey: Guid(a6b283a00a8334285827d598c55d59b7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/TileAssets using Guid(a6b283a00a8334285827d598c55d59b7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1d147f087f0a75a9dc722c0691170a67') in 0.001610459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/SunnyLand Artwork/Scenes
+  artifactKey: Guid(2fbfde5acb83dcf45971dff2335ebcb6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Scenes using Guid(2fbfde5acb83dcf45971dff2335ebcb6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '16554778728ddeeb8a75c7e9c6070425') in 0.002212042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Dino-Idle
+  artifactKey: Guid(457ff8f5dbf438f469d343fed0af861d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Dino-Idle using Guid(457ff8f5dbf438f469d343fed0af861d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '556f8e17c42c752172b16d900bb59b80') in 0.001213833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Elevator
+  artifactKey: Guid(adecd4b928acb407b978262716595b46) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Elevator using Guid(adecd4b928acb407b978262716595b46) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b49e1351d283b0f053daf0fb738d170f') in 0.00103025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/bat/bat-hang
+  artifactKey: Guid(22459fa9cc12c2844bbca7eb67308f43) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/bat/bat-hang using Guid(22459fa9cc12c2844bbca7eb67308f43) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cf5c87e20543869f3011c6f13b6381e6') in 0.001181083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/pig
+  artifactKey: Guid(427241dc12fbd6a4988bc704d572c56a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/pig using Guid(427241dc12fbd6a4988bc704d572c56a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '558572ebc26211c40fb0e3b9da7c4bf4') in 0.001174292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Settings
+  artifactKey: Guid(ac024f539280f47cea422897d1e89ded) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Settings using Guid(ac024f539280f47cea422897d1e89ded) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '63e3d8bc3060dcc447dd4c7bf3cc3442') in 0.0012755 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Level2/Level2SpriteSheet_7.asset
+  artifactKey: Guid(9374e8fbd1b1d4da6995937c101961aa) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Level2/Level2SpriteSheet_7.asset using Guid(9374e8fbd1b1d4da6995937c101961aa) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '388822f793ace97e0de7eb4352353827') in 0.002747958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Slimer-Idle
+  artifactKey: Guid(6bf1c35d7cbbc9949b16444530bfbdec) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Slimer-Idle using Guid(6bf1c35d7cbbc9949b16444530bfbdec) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ed0e135c7b78d4a4f82fa8eca2d97f72') in 0.001169542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Level2/Level2SpriteSheet_17.asset
+  artifactKey: Guid(43443c5c0d32a4eec9eeacc87c6e1002) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Level2/Level2SpriteSheet_17.asset using Guid(43443c5c0d32a4eec9eeacc87c6e1002) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '980d72eed16448b68a39d493f4c5a4ba') in 0.002976375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Elevator/ElevatorSpriteSheet_1.asset
+  artifactKey: Guid(b926d682b158849c583521c19c17f0cc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Elevator/ElevatorSpriteSheet_1.asset using Guid(b926d682b158849c583521c19c17f0cc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c07cf5ce6ddb858851511e255a52a1fb') in 0.004015208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Eagle Dive Attack
+  artifactKey: Guid(cb8ea65b3dcd38a4b9720ce60f950c46) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Eagle Dive Attack using Guid(cb8ea65b3dcd38a4b9720ce60f950c46) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3964a77f407c7105806c7cc5c955dfc0') in 0.001298792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/DeathBlocks
+  artifactKey: Guid(996afb8430073406c9315d3923bdfdf6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/DeathBlocks using Guid(996afb8430073406c9315d3923bdfdf6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2dcb80b86517e64358f1c90fd862d3a8') in 0.001318583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Level2/Level2SpriteSheet_1.asset
+  artifactKey: Guid(43f4e3a07df584239b2ba26b3304065b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Level2/Level2SpriteSheet_1.asset using Guid(43f4e3a07df584239b2ba26b3304065b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1d93856ce0dcbb44b03b02bf31bdcd45') in 0.002843375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/eagle
+  artifactKey: Guid(b38ec059928884139a1fc35d6fb8bb08) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/eagle using Guid(b38ec059928884139a1fc35d6fb8bb08) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a7372dff718dc1a0093c7011358ebb2b') in 0.001264959 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Elevator/ElevatorSpriteSheet_4.asset
+  artifactKey: Guid(bee29fd88a9c64f17a348a984866434a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Elevator/ElevatorSpriteSheet_4.asset using Guid(bee29fd88a9c64f17a348a984866434a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '69b30dd9d16bcd302054ddaac05bfd92') in 0.004381208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/bat
+  artifactKey: Guid(a1fb4e85d225ab7428d9314d3179abbb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/bat using Guid(a1fb4e85d225ab7428d9314d3179abbb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '774ce7c3f7d30fd8bff6252353fffcc4') in 0.001234291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/player/idle
+  artifactKey: Guid(a6784c39dc28a4834b763f55ec9d0408) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/player/idle using Guid(a6784c39dc28a4834b763f55ec9d0408) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '08c9e5b87d56d812f536d790c9c4a98a') in 0.001090666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Elevator/ElevatorSpriteSheet_10.asset
+  artifactKey: Guid(d11a87c65312840f8a0628bfc9d43a38) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Elevator/ElevatorSpriteSheet_10.asset using Guid(d11a87c65312840f8a0628bfc9d43a38) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4dcc4ef044a3152138f116367fb8aa49') in 0.002824417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/frog/jump
+  artifactKey: Guid(a4f9d8ce2dee641fa9830749f6d85fd5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/frog/jump using Guid(a4f9d8ce2dee641fa9830749f6d85fd5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '376d12257fa57d4ccf0ab729332641fd') in 0.001196042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/SunnyLand Artwork
+  artifactKey: Guid(2f17d1e6a207e4d8eb72bd03b1b645ac) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SunnyLand Artwork using Guid(2f17d1e6a207e4d8eb72bd03b1b645ac) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '526dc92a9b1b8bfadee3beeb47ec4887') in 0.001324916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Level2SpriteSheet.png
+  artifactKey: Guid(3656b195083c04cb9bf558788918aba0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Level2SpriteSheet.png using Guid(3656b195083c04cb9bf558788918aba0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b4f473ae5a5b7c8113d2f16acbf7c4a9') in 0.026666167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.253216 seconds.
+  path: Assets/Settings/Build Profiles/New macOS Profile.asset
+  artifactKey: Guid(75c6ff7917c9648d7b1529fd64a9a1f8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Settings/Build Profiles/New macOS Profile.asset using Guid(75c6ff7917c9648d7b1529fd64a9a1f8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '25f29fdb4734205a0713fa925d93690a') in 0.05018275 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.908606 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/TileAssets
+  artifactKey: Guid(a6b283a00a8334285827d598c55d59b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/TileAssets using Guid(a6b283a00a8334285827d598c55d59b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f99c6f8bdde742d9de82b08c8f233fdd') in 0.000288708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001451 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_2.asset
+  artifactKey: Guid(1e3aeea787bba7b4dab789d7b67cb522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_2.asset using Guid(1e3aeea787bba7b4dab789d7b67cb522) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7cb3d41fcca7d19ad9516c53eeebe27b') in 0.018494583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_9.asset
+  artifactKey: Guid(61c8e5a25e889f341800bb18bbb20f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_9.asset using Guid(61c8e5a25e889f341800bb18bbb20f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26114049fe57fc8b1e18dea8fc0b7aaf') in 0.001187791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_8.asset
+  artifactKey: Guid(3907c14ddda71e647ae330c678f02cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_8.asset using Guid(3907c14ddda71e647ae330c678f02cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '359c855656c69cceb048e1e1bc662916') in 0.000921 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_5.asset
+  artifactKey: Guid(2ec1a1bd26bc38e4dab8bf86d0557419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_5.asset using Guid(2ec1a1bd26bc38e4dab8bf86d0557419) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c738392a2fcd510a4b5416e205d4a7eb') in 0.0006855 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.462483 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_88.asset
+  artifactKey: Guid(1d82ecb383d55fe4e90c91725de4131b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_88.asset using Guid(1d82ecb383d55fe4e90c91725de4131b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '636ab9a5c8fa70f4503753ebc297e15b') in 0.001037875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_33.asset
+  artifactKey: Guid(1da38f409c4a2df4596c9eb71bd766e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_33.asset using Guid(1da38f409c4a2df4596c9eb71bd766e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b54cebc58d8f5e356f9aaca5d6f9874') in 0.000670291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.302050 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_75.asset
+  artifactKey: Guid(51f34e58c58e86d459d7cc970c489bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_75.asset using Guid(51f34e58c58e86d459d7cc970c489bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '95da7cad694b011d5043af567daaafcc') in 0.001146625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011164 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_61.asset
+  artifactKey: Guid(5a3cbe61f71559d439b122f1468babd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_61.asset using Guid(5a3cbe61f71559d439b122f1468babd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b01f8375745b127a66adb2df2599419') in 0.000827584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029933 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_56.asset
+  artifactKey: Guid(5e2c6a14d374b9a42b4809d06003ce9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_56.asset using Guid(5e2c6a14d374b9a42b4809d06003ce9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4abbd831fac1fa2cfff0471bf7c48d78') in 0.000811667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_43.asset
+  artifactKey: Guid(6d465937af972e84fba7cae24fba1ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_43.asset using Guid(6d465937af972e84fba7cae24fba1ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '17eb40ca9e17007dc1d1a918bc054760') in 0.000578875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.248465 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_86.asset
+  artifactKey: Guid(87c9ceab7fb830a47866fb46f2143717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_86.asset using Guid(87c9ceab7fb830a47866fb46f2143717) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '824a4753c6926e75862b8aac4ca03ee1') in 0.00126775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009246 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_63.asset
+  artifactKey: Guid(8bb1706f74039d849ad8fd63e0e56194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_63.asset using Guid(8bb1706f74039d849ad8fd63e0e56194) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '119ac56bb8fb198d265feb8a2a002ba8') in 0.000798417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010827 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_25.asset
+  artifactKey: Guid(8f0304d5b1bac104fb0f7fc300e676f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_25.asset using Guid(8f0304d5b1bac104fb0f7fc300e676f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd962d2e942bd0e28e15d3913687fc95c') in 0.001056125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.336950 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_34.asset
+  artifactKey: Guid(f217e2ccf1b44dc4f9a58fbf01db65e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_34.asset using Guid(f217e2ccf1b44dc4f9a58fbf01db65e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76c0294b9048646d7f1462e9a86a943e') in 0.001332791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_42.asset
+  artifactKey: Guid(f4baef240324b8243b183e022f47bdfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_42.asset using Guid(f4baef240324b8243b183e022f47bdfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fdea8779860c9054dd8b295157beebb8') in 0.000609542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009364 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_47.asset
+  artifactKey: Guid(fc744ad5005f20440aeda23e31f9cddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_47.asset using Guid(fc744ad5005f20440aeda23e31f9cddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da5814206c02cb4c6ed4f81ed1042505') in 0.000874083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_111.asset
+  artifactKey: Guid(06d789a88c4360a45bf53e83f224ffb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_111.asset using Guid(06d789a88c4360a45bf53e83f224ffb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '226cf96a445c72c2785d5364b485ed45') in 0.000656208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.308696 seconds.
+  path: Assets/SunnyLand Artwork/Scenes/Demo_tileset.unity
+  artifactKey: Guid(452af763b907cd140a1dca1564ae7b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Scenes/Demo_tileset.unity using Guid(452af763b907cd140a1dca1564ae7b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c84c8b9c66588db78571b57b84378793') in 0.000217625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/TileAssets/GameTileset.prefab
+  artifactKey: Guid(f005e33fd32ea4a64b4c120671c177b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/TileAssets/GameTileset.prefab using Guid(f005e33fd32ea4a64b4c120671c177b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b1434b097f68e22a1c1f87fc432c47d') in 0.0422455 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 267
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_6.asset
+  artifactKey: Guid(86c556afa3a132048b03b316efc9f897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_6.asset using Guid(86c556afa3a132048b03b316efc9f897) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f70200f900a3107e45b87bc4a73f68eb') in 0.0138735 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_2.asset
+  artifactKey: Guid(6106597909d47804dad36a5aab5d99b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_2.asset using Guid(6106597909d47804dad36a5aab5d99b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '71e656a14e76deabc6b29084da05a2a6') in 0.002789625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_7.asset
+  artifactKey: Guid(b7f23a79dfd6b104593150a2da274ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_7.asset using Guid(b7f23a79dfd6b104593150a2da274ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '69f7e6002b960460b7e58152e068e16d') in 0.003981542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_9.asset
+  artifactKey: Guid(01eacddc850c8594d98ac323a25210ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_9.asset using Guid(01eacddc850c8594d98ac323a25210ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e74e52700cf87b6db40bc7f4e7f8ea3d') in 0.002465791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_5.asset
+  artifactKey: Guid(3fd0542d8cef4f94ca67fc667908bbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_5.asset using Guid(3fd0542d8cef4f94ca67fc667908bbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a55ab4086be643e6d5342ae3bf789ebf') in 0.003052667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_1.asset
+  artifactKey: Guid(33ec2b05aed6ce54798a0f17c661f8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_1.asset using Guid(33ec2b05aed6ce54798a0f17c661f8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de961d7f6093cb23f01666055ccde942') in 0.004552708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_3.asset
+  artifactKey: Guid(a0b280c02cbfffe4084f4722ed26afcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_3.asset using Guid(a0b280c02cbfffe4084f4722ed26afcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '955eb0867fedeafcfdabe8b0a4e0ffee') in 0.003232834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_4.asset
+  artifactKey: Guid(54b92458ba807204c9bec304cecbc5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_4.asset using Guid(54b92458ba807204c9bec304cecbc5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b6d3f9efb8b9db1a88b40abe6d7f911b') in 0.002693666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.229949 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_26.asset
+  artifactKey: Guid(5aee560c5f58ecd4da0c90ceb8da0308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_26.asset using Guid(5aee560c5f58ecd4da0c90ceb8da0308) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '642b4253a34e794fe373aaaf09353d2e') in 0.004307584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_50.asset
+  artifactKey: Guid(5e5eaf71b365a1f4bb567388ab72640a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_50.asset using Guid(5e5eaf71b365a1f4bb567388ab72640a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ac6d5a90cf9bb937f3962c4eff5e0ca') in 0.002509709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005546 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_10.asset
+  artifactKey: Guid(5fea5f896fa49674389d58add967afa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_10.asset using Guid(5fea5f896fa49674389d58add967afa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0e4f57a8290712de3ed829498a6b9a16') in 0.004288708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_33.asset
+  artifactKey: Guid(617e78c004a17874bba2e83fd1509baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_33.asset using Guid(617e78c004a17874bba2e83fd1509baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd05dae083f0d2f4cdc54ca6d09f8cb4c') in 0.0037805 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.395147 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_98.asset
+  artifactKey: Guid(4857ecee0f7f0ad4eac1bc3b74e07a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_98.asset using Guid(4857ecee0f7f0ad4eac1bc3b74e07a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '675e64bdf9ca751173a59c14e1b0d677') in 0.003717458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012460 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_41.asset
+  artifactKey: Guid(34e7085cd8d4f5347b0a181164941bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_41.asset using Guid(34e7085cd8d4f5347b0a181164941bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01cbaef9dfd339c174b2896039dc102f') in 0.003431166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_51.asset
+  artifactKey: Guid(3bd0c7c51a16804468adfa1189f4d3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_51.asset using Guid(3bd0c7c51a16804468adfa1189f4d3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '161ce5519eceaa9446850ef172a187f9') in 0.002375375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001708 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_96.asset
+  artifactKey: Guid(2da0581e3a69dee46bd67ef0558303bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_96.asset using Guid(2da0581e3a69dee46bd67ef0558303bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1643250c7253637902749da4fb62d501') in 0.003985 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.309649 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_101.asset
+  artifactKey: Guid(eb1a20d9de13f84489c908ef578eb8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_101.asset using Guid(eb1a20d9de13f84489c908ef578eb8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '33e1d3a923b759dbd7bb8e4d1b679197') in 0.001206541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset_106.asset
+  artifactKey: Guid(feb7c546d2a4abd4c93f3236a91dbc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset_106.asset using Guid(feb7c546d2a4abd4c93f3236a91dbc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '80d02759ac3be5680a3ecf7b081453ed') in 0.0007815 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.088289 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_83.asset
+  artifactKey: Guid(64acea4efaed06d44bf141d8aaad8f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_83.asset using Guid(64acea4efaed06d44bf141d8aaad8f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '54ede004dec50075e15c2cb5d23f70ba') in 0.00449725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_85.asset
+  artifactKey: Guid(6b1d8c50cc16b93438a5adc569a81b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_85.asset using Guid(6b1d8c50cc16b93438a5adc569a81b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3680ffccd644b78fbedc9d1e9299d5c') in 0.002442875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.304130 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_17.asset
+  artifactKey: Guid(b9344e08b64d36842b6d88a418a3aa1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_17.asset using Guid(b9344e08b64d36842b6d88a418a3aa1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78000ec3a2dc8609d428849d704d3b49') in 0.00385325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_20.asset
+  artifactKey: Guid(bf52b14d19901034bbb8f9bc58d03e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_20.asset using Guid(bf52b14d19901034bbb8f9bc58d03e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '657a4b0d9e00101b3b37ced343e9fac9') in 0.002021583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_77.asset
+  artifactKey: Guid(b987ae056d4ab844ab726fc8a95bac96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_77.asset using Guid(b987ae056d4ab844ab726fc8a95bac96) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '07d314f5cf4bd7046b8cc12fc37f884d') in 0.0021855 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015498 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_54.asset
+  artifactKey: Guid(c2ee9b794942d86438549fd521ed5c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_54.asset using Guid(c2ee9b794942d86438549fd521ed5c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36d96c2f84489342476eec76f752b525') in 0.0037695 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_24.asset
+  artifactKey: Guid(c541c54721a16c2469f4cc6e8d48c303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_24.asset using Guid(c541c54721a16c2469f4cc6e8d48c303) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3d6c3e02c76c52e721cbec80df331779') in 0.002307625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_32.asset
+  artifactKey: Guid(cae9a8360392bfd49b13e8cbe579bf85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_32.asset using Guid(cae9a8360392bfd49b13e8cbe579bf85) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c932fabf8003c815c9117ca1620a7ff') in 0.001812625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.316489 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_106.asset
+  artifactKey: Guid(59b06d2d0eac74e44a1e31ae4c52d5f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_106.asset using Guid(59b06d2d0eac74e44a1e31ae4c52d5f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31af1a53d9c9e9c232c11500eb78f546') in 0.00256775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_107.asset
+  artifactKey: Guid(5a80fe4c8be81024e8b13735ff923ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_107.asset using Guid(5a80fe4c8be81024e8b13735ff923ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74a9e37b2538d70fedd64046918f66d2') in 0.003815375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_114.asset
+  artifactKey: Guid(6618f48f6179dd44fa6025c6a5c33e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_114.asset using Guid(6618f48f6179dd44fa6025c6a5c33e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9208caac5c9a647872607a1ac692ea51') in 0.003213167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014456 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_113.asset
+  artifactKey: Guid(82a7d5602284f5a498f8947d101ac846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_113.asset using Guid(82a7d5602284f5a498f8947d101ac846) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9fbd7a79fcfdb15e7bcd3105c5103158') in 0.003683083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_109.asset
+  artifactKey: Guid(88ebfe9a21771ba4abbdad7e0e8cde1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_109.asset using Guid(88ebfe9a21771ba4abbdad7e0e8cde1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2dccecbb882b5727e3a6ab4be8aa377') in 0.00198625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_100.asset
+  artifactKey: Guid(872081b14e7089c4c8aa4ca2ff04d870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/Tileset/tileset-sliced_100.asset using Guid(872081b14e7089c4c8aa4ca2ff04d870) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd146ee4f82d4f753c1b32bd388eeab17') in 0.001833375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Thread 0x17b2d7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.506 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.738 seconds
+Domain Reload Profiling: 1247ms
+	BeginReloadAssembly (175ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (39ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (66ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (14ms)
+	LoadAllAssembliesAndSetupDomain (283ms)
+		LoadAssemblies (206ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (115ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (101ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (738ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (553ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (32ms)
+			ProcessInitializeOnLoadAttributes (492ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5075 unused Assets / (1.2 MB). Loaded Objects now: 5730.
+Memory consumption went from 180.2 MB to 179.0 MB.
+Total: 5.836584 ms (FindLiveObjects: 0.288125 ms CreateObjectMapping: 0.190125 ms MarkObjects: 4.587292 ms  DeleteObjects: 0.770750 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 501.295889 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(2a90b547a804d403992ef56d34a42f92) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/Level1.unity using Guid(2a90b547a804d403992ef56d34a42f92) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f754add3f9468ac456149c6646d5a6cd') in 0.033220042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Thread 0x17b2d7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.443 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 0.37 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.728 seconds
+Domain Reload Profiling: 1173ms
+	BeginReloadAssembly (123ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (273ms)
+		LoadAssemblies (194ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (113ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (100ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (728ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (552ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (31ms)
+			ProcessInitializeOnLoadAttributes (491ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5075 unused Assets / (1.3 MB). Loaded Objects now: 5733.
+Memory consumption went from 187.6 MB to 186.3 MB.
+Total: 5.811459 ms (FindLiveObjects: 0.227834 ms CreateObjectMapping: 0.184416 ms MarkObjects: 4.578084 ms  DeleteObjects: 0.820792 ms)
 
 Prepare: number of updated asset objects reloaded= 0
