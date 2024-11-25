@@ -1,36 +1,47 @@
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerAndShadow : MonoBehaviour
 {
-    public GameObject player; // The player object
-    public GameObject shadow; // The shadow object
-    public float delay = 2f;  // Delay in seconds
+    public GameObject player;
+    public GameObject shadow;
+    public float delay = 2f;
 
-    private Queue<Vector3> positionQueue = new Queue<Vector3>();
-    private Queue<Quaternion> rotationQueue = new Queue<Quaternion>();
+    private Vector3[] positionBuffer;
+    private Quaternion[] rotationBuffer;
+    private int bufferSize;
+    private int writeIndex = 0;
+    private int readIndex = 0;
+    private float timePerStep;
     private float timer;
-    private float startTime;
-    float start = 1;
+
+    void Start()
+    {
+        timePerStep = Time.fixedDeltaTime;
+        bufferSize = Mathf.CeilToInt(delay / timePerStep);
+
+        positionBuffer = new Vector3[bufferSize];
+        rotationBuffer = new Quaternion[bufferSize];
+    }
 
     void Update()
     {
-
-        // Record player's position and rotation over time
         timer += Time.deltaTime;
-        if (timer >= Time.fixedDeltaTime)
+
+        if (timer >= timePerStep)
         {
-            positionQueue.Enqueue(player.transform.position);
-            rotationQueue.Enqueue(player.transform.rotation);
+            positionBuffer[writeIndex] = player.transform.position;
+            rotationBuffer[writeIndex] = player.transform.rotation;
+
+            writeIndex = (writeIndex + 1) % bufferSize;
             timer = 0f;
+
+            if ((writeIndex + 1) % bufferSize == readIndex)
+            {
+                readIndex = (readIndex + 1) % bufferSize;
+            }
         }
 
-        // Remove positions/rotations older than the delay
-        if (positionQueue.Count > delay / Time.fixedDeltaTime)
-        {
-            shadow.transform.position = positionQueue.Dequeue();
-            shadow.transform.rotation = rotationQueue.Dequeue();
-        }
+        shadow.transform.position = positionBuffer[readIndex];
+        shadow.transform.rotation = rotationBuffer[readIndex];
     }
 }

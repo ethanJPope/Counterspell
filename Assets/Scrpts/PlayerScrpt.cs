@@ -1,21 +1,27 @@
 using Unity.VisualScripting;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class PlayerScrpt : MonoBehaviour
 {
     private Rigidbody2D rb;
     public GameObject shadow;
+    public Animator animator;
+    public AudioClip jumpSound;
+    public AudioClip deathSound;
+    public BoxCollider2D feet;
+
     private float move;
     public float speed;
     public float jump;
     bool istouchingGround;
-    public bool dead = false;
+    bool dead = false;
     public float startTime = 5f;
     float timer = 0;
     public GameObject text;
+    bool movement = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,10 +39,14 @@ public class PlayerScrpt : MonoBehaviour
         }
         move = Input.GetAxisRaw("Horizontal");
 
-        rb.linearVelocity = new Vector2(move * speed * Time.deltaTime, rb.linearVelocity.y);
+        animator.SetFloat("speed", Math.Abs(move));
+        animator.SetBool("isJumping", istouchingGround == false);
+        rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
         if(Input.GetButtonDown("Jump")) {
             if(istouchingGround) {
+
                 rb.AddForce(new Vector2(rb.linearVelocity.x, jump * 10));
+                SoundFXManager.instance.PlaySoundFXClip(jumpSound, transform, 1f);
             }
         }
 
@@ -44,26 +54,23 @@ public class PlayerScrpt : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             dead = false;
         }
-    }
-    private void OnCollisionEnter2D (Collision2D collision2D) {
-        if(collision2D.gameObject.CompareTag("Ground")) {
+
+        if(feet.IsTouchingLayers(LayerMask.GetMask("Ground"))) {
             istouchingGround = true;
         }
-
-        if(collision2D.gameObject.CompareTag("DeathBlocks")) {
-            Vector3 normal = collision2D.GetContact(0).normal;
-            if(normal == Vector3.up) {
-                dead = true;
-            }
+        if(feet.IsTouchingLayers(LayerMask.GetMask("DeathBlocks"))) {
+            SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 1f);
+            Invoke("playerDies", 0.1f);
         }
-
+    }
+    private void OnCollisionEnter2D (Collision2D collision2D) {
         if(collision2D.gameObject.CompareTag("Shadow")) {
-            dead = true;
+            SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 1f);
+            Invoke("playerDies", 0.1f);
             
         }
         if(collision2D.gameObject.CompareTag("Elevator1")) {
-            text.SetActive(true);
-        }
+        SceneManager.LoadScene("Scenes/Level2");        }
     }
 
     private void OnCollisionExit2D(Collision2D collision2D) {
@@ -72,5 +79,7 @@ public class PlayerScrpt : MonoBehaviour
         }
 
     }
-
+    private void playerDies() {
+        dead = true;
+    }
 }
