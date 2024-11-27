@@ -3910,3 +3910,11 @@ Memory consumption went from 125.9 MB to 123.8 MB.
 Total: 6.680700 ms (FindLiveObjects: 0.507200 ms CreateObjectMapping: 0.233600 ms MarkObjects: 4.726400 ms  DeleteObjects: 1.212700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 10587.796154 seconds.
+  path: Assets/Scrpts/VolumeSettings.cs
+  artifactKey: Guid(9fc9f5ed088a78749823704d4fbbf55a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scrpts/VolumeSettings.cs using Guid(9fc9f5ed088a78749823704d4fbbf55a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a6bb396234cde7d3e6f3a1df1324fba') in 0.0022141 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
