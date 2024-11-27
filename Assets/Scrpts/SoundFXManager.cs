@@ -6,7 +6,13 @@ public class SoundFXManager: MonoBehaviour
 {
     public static SoundFXManager instance;
     public AudioSource soundFXSource;
+    public AudioSource musicSource;
+    public AudioClip background;
 
+    private void Start() {
+        musicSource.clip = background;
+        musicSource.Play();
+    }
     private void Awake() {
         if(instance == null) {
             instance = this;

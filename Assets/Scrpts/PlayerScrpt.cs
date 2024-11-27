@@ -6,6 +6,7 @@ using System;
 
 public class PlayerScrpt : MonoBehaviour
 {
+    [SerializeField] Cooldown cooldown;
     private Rigidbody2D rb;
     public GameObject shadow;
     public Animator animator;
@@ -20,8 +21,10 @@ public class PlayerScrpt : MonoBehaviour
     bool dead = false;
     public float startTime = 5f;
     float timer = 0;
+    float soundTimer = 0;
     public GameObject text;
     bool movement = false;
+    bool shadowMove = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,8 +34,11 @@ public class PlayerScrpt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timer >= startTime) {
-            shadow.SetActive(true);
+        if(Input.anyKeyDown) {
+            shadowMove = true;
+        }
+        if(shadowMove) {
+            Invoke("startShadow", 1f);
         }
         else {
             timer = timer + Time.deltaTime;
@@ -59,14 +65,19 @@ public class PlayerScrpt : MonoBehaviour
             istouchingGround = true;
         }
         if(feet.IsTouchingLayers(LayerMask.GetMask("DeathBlocks"))) {
-            SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 1f);
-            Invoke("playerDies", 0.1f);
+            if(!cooldown.isCoolingDown){
+                SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 1f);
+                cooldown.startCoolingDown();
+            } 
+
+            Invoke("playerDies", 0.7f);
+
         }
     }
     private void OnCollisionEnter2D (Collision2D collision2D) {
         if(collision2D.gameObject.CompareTag("Shadow")) {
             SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 1f);
-            Invoke("playerDies", 0.1f);
+            Invoke("playerDies", 1f);
             
         }
         if(collision2D.gameObject.CompareTag("Elevator1")) {
@@ -81,5 +92,9 @@ public class PlayerScrpt : MonoBehaviour
     }
     private void playerDies() {
         dead = true;
+    }
+
+    private void startShadow() {
+        shadow.SetActive(true);
     }
 }

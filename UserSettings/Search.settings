@@ -9,7 +9,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.66F56946" = "tilemap"
+	"last_search.66F56946" = "tile palette"
 	"OpenInspectorPreview.66F56946" = "0"
 	"currentGroup.66F56946" = ""
 }
@@ -69,6 +69,7 @@ objectSelectors = {
 }
 recentSearches = [
 	""
+	"editor"
 	"pac"
 	"sp"
 	"package m"

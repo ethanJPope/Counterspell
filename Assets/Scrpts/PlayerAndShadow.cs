@@ -24,7 +24,7 @@ public class PlayerAndShadow : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
         timer += Time.deltaTime;
 
         if (timer >= timePerStep)
