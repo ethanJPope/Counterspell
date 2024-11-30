@@ -34,7 +34,7 @@ public class PlayerScrpt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.anyKeyDown) {
+        if(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D)) {
             shadowMove = true;
         }
         if(shadowMove) {
